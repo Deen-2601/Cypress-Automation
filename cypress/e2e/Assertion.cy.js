@@ -11,6 +11,10 @@ describe('Assertions demo', () =>{
         cy.url().should('eq','https://www.saucedemo.com/')
         cy.url().should('contain','sauce')
 
+        cy.title().should('include', 'SWAG')
+        .and('eq', 'SWAGLABS')
+        .and('notcontain', 'Baba')
+
 
 
     })
