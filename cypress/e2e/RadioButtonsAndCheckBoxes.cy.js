@@ -23,5 +23,9 @@ describe("Check UI elements", ()=>{
 
         //unselecting single checkbox-monday
         cy.get("input#monday").uncheck().should('not.be.checked')
+
+        //selecting and unselecting all the checkboxes
+        cy.get("input.form-check-input[type='checkbox']").check().should('be.checked')
+        cy.get("input.form-check-input[type='checkbox']").uncheck().should('not.be.checked')
     })
 })
