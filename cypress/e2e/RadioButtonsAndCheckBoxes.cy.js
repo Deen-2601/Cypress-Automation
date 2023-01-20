@@ -14,5 +14,14 @@ describe("Check UI elements", ()=>{
         //selecting radio buttons
         cy.get("input#male").check().should('be.checked')
         cy.get("input#female").should('not.be.checked')
+
+        //visibility of the checkboxes
+        cy.get("input#monday").should("be.visible")
+
+        //selecting single checkbox - monday
+        cy.get("input#monday").check().should('be.checked')
+
+        //unselecting single checkbox-monday
+        cy.get("input#monday").uncheck().should('not.be.checked')
     })
 })
