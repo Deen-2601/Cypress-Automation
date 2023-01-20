@@ -13,6 +13,6 @@ describe("Check UI elements", ()=>{
 
         //selecting radio buttons
         cy.get("input#male").check().should('be.checked')
-        cy.get("input#female").check().should('not.be.checked')
+        cy.get("input#female").should('not.be.checked')
     })
 })
