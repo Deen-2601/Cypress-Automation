@@ -5,8 +5,8 @@ describe('handle dropdowns', () =>{
 
         cy.visit('https://www.zoho.com/commerce/free-demo.html')
 
-        cy.get('#zcf_address_country').select('Germany')
-        .should('have.value','Germany')
+        cy.get('#zcf_address_country').select('Nigeria')
+        .should('have.value','Nigeria')
 
 
 
