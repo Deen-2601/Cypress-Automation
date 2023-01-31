@@ -1,5 +1,5 @@
 
-describe('handle dropdowns', () =>{
+describe('Handle dropdowns', () =>{
 
     itskip('Dropdown with select', () =>{
 
